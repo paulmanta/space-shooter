@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\External\Framework-Lab2-Ex1\Framework\DrawingWindow.cpp" />
+    <ClCompile Include="..\..\..\External\Framework-Lab2-Ex1\Framework\Transform2D.cpp" />
+    <ClCompile Include="..\..\..\External\Framework-Lab2-Ex1\Framework\Visual2D.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\External\Framework-Lab2-Ex1\Framework\Circle2D.h" />
+    <ClInclude Include="..\..\..\External\Framework-Lab2-Ex1\Framework\Color.h" />
+    <ClInclude Include="..\..\..\External\Framework-Lab2-Ex1\Framework\DrawingWindow.h" />
+    <ClInclude Include="..\..\..\External\Framework-Lab2-Ex1\Framework\Line2D.h" />
+    <ClInclude Include="..\..\..\External\Framework-Lab2-Ex1\Framework\Object2D.h" />
+    <ClInclude Include="..\..\..\External\Framework-Lab2-Ex1\Framework\Point2D.h" />
+    <ClInclude Include="..\..\..\External\Framework-Lab2-Ex1\Framework\Point3D.h" />
+    <ClInclude Include="..\..\..\External\Framework-Lab2-Ex1\Framework\Polygon2D.h" />
+    <ClInclude Include="..\..\..\External\Framework-Lab2-Ex1\Framework\Rectangle2d.h" />
+    <ClInclude Include="..\..\..\External\Framework-Lab2-Ex1\Framework\Text.h" />
+    <ClInclude Include="..\..\..\External\Framework-Lab2-Ex1\Framework\Transform2D.h" />
+    <ClInclude Include="..\..\..\External\Framework-Lab2-Ex1\Framework\Visual2D.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B7E9204B-355C-407D-B45D-77A3A95789B9}</ProjectGuid>
+    <RootNamespace>Framework</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\Binary\Visual Studio 2015\$(Configuration)\</OutDir>
+    <TargetExt>.lib</TargetExt>
+    <IntDir>..\..\..\Intermediate\Visual Studio 2015\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\..\Binary\Visual Studio 2015\$(Configuration)\</OutDir>
+    <TargetExt>.lib</TargetExt>
+    <IntDir>..\..\..\Intermediate\Visual Studio 2015\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\External\freeglut-2.8.1\include\;..\..\..\External\Framework-Lab2-Ex1\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\..\External\freeglut\</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\..\External\freeglut-2.8.1\include\;..\..\..\External\Framework-Lab2-Ex1\</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\..\..\External\freeglut\</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Game", "Game\Game.vcxproj", "{54DF2720-66BA-4B91-A3A8-1A34CFDE23BA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B7E9204B-355C-407D-B45D-77A3A95789B9} = {B7E9204B-355C-407D-B45D-77A3A95789B9}
+		{1AE4E979-0D35-4747-BF8E-DD60358F49DB} = {1AE4E979-0D35-4747-BF8E-DD60358F49DB}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Framework", "Framework\Framework.vcxproj", "{B7E9204B-355C-407D-B45D-77A3A95789B9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1AE4E979-0D35-4747-BF8E-DD60358F49DB} = {1AE4E979-0D35-4747-BF8E-DD60358F49DB}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FreeGLUT", "FreeGLUT\FreeGLUT.vcxproj", "{1AE4E979-0D35-4747-BF8E-DD60358F49DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7E9204B-355C-407D-B45D-77A3A95789B9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B7E9204B-355C-407D-B45D-77A3A95789B9}.Debug|Win32.Build.0 = Debug|Win32
+		{B7E9204B-355C-407D-B45D-77A3A95789B9}.Release|Win32.ActiveCfg = Release|Win32
+		{B7E9204B-355C-407D-B45D-77A3A95789B9}.Release|Win32.Build.0 = Release|Win32
+		{54DF2720-66BA-4B91-A3A8-1A34CFDE23BA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{54DF2720-66BA-4B91-A3A8-1A34CFDE23BA}.Debug|Win32.Build.0 = Debug|Win32
+		{54DF2720-66BA-4B91-A3A8-1A34CFDE23BA}.Release|Win32.ActiveCfg = Release|Win32
+		{54DF2720-66BA-4B91-A3A8-1A34CFDE23BA}.Release|Win32.Build.0 = Release|Win32
+		{1AE4E979-0D35-4747-BF8E-DD60358F49DB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1AE4E979-0D35-4747-BF8E-DD60358F49DB}.Debug|Win32.Build.0 = Debug|Win32
+		{1AE4E979-0D35-4747-BF8E-DD60358F49DB}.Release|Win32.ActiveCfg = Release|Win32
+		{1AE4E979-0D35-4747-BF8E-DD60358F49DB}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

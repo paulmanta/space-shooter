@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{abff3c6b-fefe-4f52-90dd-0ed1f8d2870d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\EntitySystem">
+      <UniqueIdentifier>{d47786d6-81fc-4c97-a4ed-912d0f7d6245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Core">
+      <UniqueIdentifier>{d70d9950-bd9b-44eb-be3f-221e15f82566}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Core\EntitySystem">
+      <UniqueIdentifier>{fa83ed6e-3085-493a-b8d7-dcf7a9479ea2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Math">
+      <UniqueIdentifier>{31bc75df-2ca5-49bf-905d-48e15f847e82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Math">
+      <UniqueIdentifier>{9378d957-92a9-4ce6-8f0c-b39beabe6e88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\GameTime">
+      <UniqueIdentifier>{aaeb1d25-4f0a-4edc-af75-6b3d57026a88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Core\GameTime">
+      <UniqueIdentifier>{66733af3-19b4-494f-b25c-dcf1e740a0b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entities">
+      <UniqueIdentifier>{79af2adf-503d-405f-9254-27cbc1974c76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entities\Player">
+      <UniqueIdentifier>{55acb269-edcb-4474-aa67-fb8d76b5937f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entities">
+      <UniqueIdentifier>{8567a010-61e7-4627-a282-06a8b86d9d4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entities\Player">
+      <UniqueIdentifier>{f7ec5329-6d3d-41a9-9c2f-dc80c1a97f9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entities\Enemy">
+      <UniqueIdentifier>{4dbe57b0-4463-4591-8a58-38ba16702b2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entities\Enemy">
+      <UniqueIdentifier>{c86e4b18-cfe9-46aa-81f1-ab28badedcf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Core\GameWorld">
+      <UniqueIdentifier>{36cfc27d-3190-48a9-b1bc-b7ab446d4891}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\GameWorld">
+      <UniqueIdentifier>{d68cc100-ac35-491c-8fea-6258cb0b46a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Spawners">
+      <UniqueIdentifier>{50573689-46ab-4e18-b584-8f39ce1cfd8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Spawners">
+      <UniqueIdentifier>{3def4014-b8e2-4760-8e13-3c383b55ef81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entities\Camera">
+      <UniqueIdentifier>{d3c849e4-f5ba-4015-9142-449341e879ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entities\Camera">
+      <UniqueIdentifier>{ba72a069-15e7-4c67-a9c4-5894e6274ef6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Entities\Bullet">
+      <UniqueIdentifier>{71c81276-5341-48cf-906f-4f6920a56347}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Entities\Bullet">
+      <UniqueIdentifier>{b259860c-7f07-49ba-865c-e4ac3131c4ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Graphics">
+      <UniqueIdentifier>{312d7460-6627-4096-8857-65dfba284159}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics">
+      <UniqueIdentifier>{859eba2b-a420-428b-bf03-e4e5fbeb0ad5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\GameScore">
+      <UniqueIdentifier>{ced902cf-8aa0-474e-8ec7-6682fab57ccf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Core\GameScore">
+      <UniqueIdentifier>{437c41f9-3e1b-4382-ba9d-58867b79d901}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Source\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Core\EntitySystem\Entity.cpp">
+      <Filter>Source Files\Core\EntitySystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Core\EntitySystem\EntityCollider.cpp">
+      <Filter>Source Files\Core\EntitySystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Core\EntitySystem\EntitySprite.cpp">
+      <Filter>Source Files\Core\EntitySystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Core\EntitySystem\EntityTransform.cpp">
+      <Filter>Source Files\Core\EntitySystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Math\TransformStack.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Core\GameTime\GameTime.cpp">
+      <Filter>Source Files\Core\GameTime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Math\VectorMath.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Entities\FactoryFunctions.cpp">
+      <Filter>Source Files\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Entities\Player\PlayerMovement.cpp">
+      <Filter>Source Files\Entities\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Entities\Enemy\EnemyMovement.cpp">
+      <Filter>Source Files\Entities\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Entities\Enemy\SnakeSprite.cpp">
+      <Filter>Source Files\Entities\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Core\GameWorld\GameWorld.cpp">
+      <Filter>Source Files\Core\GameWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Spawners\BullerSpawner.cpp">
+      <Filter>Source Files\Spawners</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Spawners\EnemySpawner.cpp">
+      <Filter>Source Files\Spawners</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Entities\Camera\CameraMovement.cpp">
+      <Filter>Source Files\Entities\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Entities\Bullet\BulletHealth.cpp">
+      <Filter>Source Files\Entities\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Entities\Bullet\BulletMovement.cpp">
+      <Filter>Source Files\Entities\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Entities\Camera\CameraSprite.cpp">
+      <Filter>Source Files\Entities\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Graphics\FuzzyCircle.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Graphics\Graphics.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Graphics\Grid.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Graphics\FilledBar.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Entities\Player\PlayerHealth.cpp">
+      <Filter>Source Files\Entities\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Core\GameScore\GameScore.cpp">
+      <Filter>Source Files\Core\GameScore</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Entities\Enemy\BladeSprite.cpp">
+      <Filter>Source Files\Entities\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Entities\Enemy\EnemyHealth.cpp">
+      <Filter>Source Files\Entities\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Entities\Player\PlayerWeapon.cpp">
+      <Filter>Source Files\Entities\Player</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Source\Core\EntitySystem\Entity.h">
+      <Filter>Header Files\Core\EntitySystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Core\EntitySystem\EntityCollider.h">
+      <Filter>Header Files\Core\EntitySystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Core\EntitySystem\EntityHealth.h">
+      <Filter>Header Files\Core\EntitySystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Core\EntitySystem\EntityMovement.h">
+      <Filter>Header Files\Core\EntitySystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Core\EntitySystem\EntitySprite.h">
+      <Filter>Header Files\Core\EntitySystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Core\EntitySystem\EntityTransform.h">
+      <Filter>Header Files\Core\EntitySystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Math\TransformStack.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Core\GameTime\GameTime.h">
+      <Filter>Header Files\Core\GameTime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Core\EntitySystem\EntityComponent.h">
+      <Filter>Header Files\Core\EntitySystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Math\VectorMath.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Entities\FactoryFunctions.h">
+      <Filter>Header Files\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Entities\Player\PlayerMovement.h">
+      <Filter>Header Files\Entities\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Entities\Enemy\EnemyMovement.h">
+      <Filter>Header Files\Entities\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Entities\Enemy\SnakeSprite.h">
+      <Filter>Header Files\Entities\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Core\GameWorld\GameWorld.h">
+      <Filter>Header Files\Core\GameWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Spawners\BulletSpawner.h">
+      <Filter>Header Files\Spawners</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Spawners\EnemySpawner.h">
+      <Filter>Header Files\Spawners</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Entities\Camera\CameraMovement.h">
+      <Filter>Header Files\Entities\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Entities\Bullet\BulletHealth.h">
+      <Filter>Header Files\Entities\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Entities\Bullet\BulletMovement.h">
+      <Filter>Header Files\Entities\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Entities\Camera\CameraSprite.h">
+      <Filter>Header Files\Entities\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Graphics\FuzzyCircle.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Graphics\Graphics.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Graphics\Grid.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Graphics\FilledBar.h">
+      <Filter>Header Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Entities\Player\PlayerHealth.h">
+      <Filter>Header Files\Entities\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Core\GameScore\GameScore.h">
+      <Filter>Header Files\Core\GameScore</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Entities\Enemy\BladeSprite.h">
+      <Filter>Header Files\Entities\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Entities\Enemy\EnemyHealth.h">
+      <Filter>Header Files\Entities\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Core\EntitySystem\EntityWeapon.h">
+      <Filter>Header Files\Core\EntitySystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Entities\Player\PlayerWeapon.h">
+      <Filter>Header Files\Entities\Player</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{54DF2720-66BA-4B91-A3A8-1A34CFDE23BA}</ProjectGuid>
+    <RootNamespace>Game</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\Binary\Visual Studio 2015\$(Configuration)\</OutDir>
+    <TargetName>GeometryWars</TargetName>
+    <IntDir>..\..\..\Intermediate\Visual Studio 2015\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\..\Binary\Visual Studio 2015\$(Configuration)\</OutDir>
+    <TargetName>GeometryWars</TargetName>
+    <IntDir>..\..\..\Intermediate\Visual Studio 2015\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\External\freeglut-2.8.1\include\;..\..\..\External\Framework-Lab2-Ex1\;..\..\..\Source\</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_VARIADIC_MAX=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\..\Binary\Visual Studio 2015\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Framework.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\..\External\freeglut-2.8.1\include\;..\..\..\External\Framework-Lab2-Ex1\;..\..\..\Source\</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_VARIADIC_MAX=10;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\..\..\Binary\Visual Studio 2015\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Framework.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Source\Core\EntitySystem\Entity.cpp" />
+    <ClCompile Include="..\..\..\Source\Core\EntitySystem\EntityCollider.cpp" />
+    <ClCompile Include="..\..\..\Source\Core\EntitySystem\EntitySprite.cpp" />
+    <ClCompile Include="..\..\..\Source\Core\EntitySystem\EntityTransform.cpp" />
+    <ClCompile Include="..\..\..\Source\Core\GameScore\GameScore.cpp" />
+    <ClCompile Include="..\..\..\Source\Core\GameTime\GameTime.cpp" />
+    <ClCompile Include="..\..\..\Source\Core\GameWorld\GameWorld.cpp" />
+    <ClCompile Include="..\..\..\Source\Entities\Bullet\BulletHealth.cpp" />
+    <ClCompile Include="..\..\..\Source\Entities\Bullet\BulletMovement.cpp" />
+    <ClCompile Include="..\..\..\Source\Entities\Camera\CameraMovement.cpp" />
+    <ClCompile Include="..\..\..\Source\Entities\Camera\CameraSprite.cpp" />
+    <ClCompile Include="..\..\..\Source\Entities\Enemy\BladeSprite.cpp" />
+    <ClCompile Include="..\..\..\Source\Entities\Enemy\EnemyHealth.cpp" />
+    <ClCompile Include="..\..\..\Source\Entities\Enemy\EnemyMovement.cpp" />
+    <ClCompile Include="..\..\..\Source\Entities\Enemy\SnakeSprite.cpp" />
+    <ClCompile Include="..\..\..\Source\Entities\FactoryFunctions.cpp" />
+    <ClCompile Include="..\..\..\Source\Entities\Player\PlayerWeapon.cpp" />
+    <ClCompile Include="..\..\..\Source\Entities\Player\PlayerHealth.cpp" />
+    <ClCompile Include="..\..\..\Source\Entities\Player\PlayerMovement.cpp" />
+    <ClCompile Include="..\..\..\Source\Graphics\FuzzyCircle.cpp" />
+    <ClCompile Include="..\..\..\Source\Graphics\Graphics.cpp" />
+    <ClCompile Include="..\..\..\Source\Graphics\Grid.cpp" />
+    <ClCompile Include="..\..\..\Source\Graphics\FilledBar.cpp" />
+    <ClCompile Include="..\..\..\Source\Main.cpp" />
+    <ClCompile Include="..\..\..\Source\Math\TransformStack.cpp" />
+    <ClCompile Include="..\..\..\Source\Math\VectorMath.cpp" />
+    <ClCompile Include="..\..\..\Source\Spawners\BullerSpawner.cpp" />
+    <ClCompile Include="..\..\..\Source\Spawners\EnemySpawner.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Source\Core\EntitySystem\Entity.h" />
+    <ClInclude Include="..\..\..\Source\Core\EntitySystem\EntityWeapon.h" />
+    <ClInclude Include="..\..\..\Source\Core\EntitySystem\EntityCollider.h" />
+    <ClInclude Include="..\..\..\Source\Core\EntitySystem\EntityComponent.h" />
+    <ClInclude Include="..\..\..\Source\Core\EntitySystem\EntityHealth.h" />
+    <ClInclude Include="..\..\..\Source\Core\EntitySystem\EntityMovement.h" />
+    <ClInclude Include="..\..\..\Source\Core\EntitySystem\EntitySprite.h" />
+    <ClInclude Include="..\..\..\Source\Core\EntitySystem\EntityTransform.h" />
+    <ClInclude Include="..\..\..\Source\Core\GameScore\GameScore.h" />
+    <ClInclude Include="..\..\..\Source\Core\GameTime\GameTime.h" />
+    <ClInclude Include="..\..\..\Source\Core\GameWorld\GameWorld.h" />
+    <ClInclude Include="..\..\..\Source\Entities\Bullet\BulletHealth.h" />
+    <ClInclude Include="..\..\..\Source\Entities\Bullet\BulletMovement.h" />
+    <ClInclude Include="..\..\..\Source\Entities\Camera\CameraMovement.h" />
+    <ClInclude Include="..\..\..\Source\Entities\Camera\CameraSprite.h" />
+    <ClInclude Include="..\..\..\Source\Entities\Enemy\BladeSprite.h" />
+    <ClInclude Include="..\..\..\Source\Entities\Enemy\EnemyHealth.h" />
+    <ClInclude Include="..\..\..\Source\Entities\Enemy\EnemyMovement.h" />
+    <ClInclude Include="..\..\..\Source\Entities\Enemy\SnakeSprite.h" />
+    <ClInclude Include="..\..\..\Source\Entities\FactoryFunctions.h" />
+    <ClInclude Include="..\..\..\Source\Entities\Player\PlayerWeapon.h" />
+    <ClInclude Include="..\..\..\Source\Entities\Player\PlayerHealth.h" />
+    <ClInclude Include="..\..\..\Source\Entities\Player\PlayerMovement.h" />
+    <ClInclude Include="..\..\..\Source\Graphics\FuzzyCircle.h" />
+    <ClInclude Include="..\..\..\Source\Graphics\Graphics.h" />
+    <ClInclude Include="..\..\..\Source\Graphics\Grid.h" />
+    <ClInclude Include="..\..\..\Source\Graphics\FilledBar.h" />
+    <ClInclude Include="..\..\..\Source\Math\TransformStack.h" />
+    <ClInclude Include="..\..\..\Source\Math\VectorMath.h" />
+    <ClInclude Include="..\..\..\Source\Spawners\BulletSpawner.h" />
+    <ClInclude Include="..\..\..\Source\Spawners\EnemySpawner.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
