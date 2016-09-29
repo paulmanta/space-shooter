@@ -14,8 +14,8 @@
 // Standard libraries
 #include <memory>
 
-static const int kWindowWidth = 800;
-static const int kWindowHeight = 500;
+static const int cWindowWidth = 800;
+static const int cWindowHeight = 500;
 
 static std::shared_ptr<Visual2D> visual;
 
@@ -41,7 +41,7 @@ void DrawingWindow::init()
 
     visual = std::make_shared<Visual2D>(xf1, yf1, xf2, yf2, xp1, yp1, xp2, yp2);
     DrawingWindow::addVisual2D(visual.get());
-    
+
     gameTime.init();
 
     bulletSpawner.createBullets(100);
@@ -78,7 +78,7 @@ void onSpecialUp(int key, int x, int y)
 
 void DrawingWindow::onReshape(int width, int height)
 {
-	glutReshapeWindow(kWindowWidth, kWindowHeight);
+	glutReshapeWindow(cWindowWidth, cWindowHeight);
 }
 
 void DrawingWindow::onMouse(int button, int state, int x, int y)
@@ -88,7 +88,7 @@ void DrawingWindow::onMouse(int button, int state, int x, int y)
 
 int main(int argc, char** argv)
 {
-    DrawingWindow window(argc, argv, kWindowWidth, kWindowHeight, 200, 200, "Geometry Wars");
+    DrawingWindow window(argc, argv, cWindowWidth, cWindowHeight, 200, 200, "Geometry Wars");
 
     glutKeyboardUpFunc(onKeyUp);
     glutSpecialUpFunc(onSpecialUp);
